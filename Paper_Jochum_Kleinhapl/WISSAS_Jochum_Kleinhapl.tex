@@ -37,7 +37,7 @@
 \maketitle
 
 \begin{abstract}
-text  
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 \end{abstract}
 
 \IEEEpeerreviewmaketitle
@@ -62,7 +62,7 @@ Die ursprüngliche Bezeichnung von Hypervisoren als VMM stammt von deren primär
 \subsection{Typ1 und Typ2 Hypervisoren}
 Bei Hypervisoren wird generell zwischen zwei Architekturen unterschieden: Typ-1-Hypervisoren (auch native oder bare-metal Hypervisor) und Typ-2-Hypervisoren (auch hosted Hypervisor). Ein Typ-1 Hypervisor wird auch als nativer oder bare-metal Hypervisor beschrieben, weil dieser direkt auf der Server Hardware läuft, ohne ein darunterliegendes Betriebssystem zu benötigen. Ein typischer Typ-1 Hypervisor ist VMWare ESXi. Der Typ-2 Hypervisor oder auch hosted Hypervisor läuft über einem traditionellen Betriebssystem, dieses wird auch als Host-Betriebssystem bezeichnet. Ein typischer Typ-2 Hypervisor ist VMWare Workstation. Die verschiedenen Architekturen der beiden Hypervisor Typen werden in der Grafik 1 dargestellt. [2], [3] 
 
-\begin{figure}
+\begin{figure}[!h]
 	\centering
 	\includegraphics[keepaspectratio,width=8.5cm,height=0.75\textheight]{hypervisors.png}
 	\caption{Die Architektur von Typ 1 und Typ 2 Hypervisoren.}
@@ -73,7 +73,7 @@ Bei Hypervisoren wird generell zwischen zwei Architekturen unterschieden: Typ-1-
 \label{Computer Spezifikation}
 Die zwei Computersysteme welche für die Versuche/Messungen verwendet wurden, wurden von der FH Joanneum Graz zur Verfügung gestellt. Es wurden deshalb zwei Systeme ausgewählt da dadurch ein paralleler Testbetrieb ermöglicht wurde was eine enorme Zeitersparnis einbrachte. Bei den Systemen handelt sich um zwei vollständig idente Systeme um zu gewährleisten, dass die Grundvoraussetzungen dieselben sind. Die untenstehende Tabelle gibt einen Überblick über die wichtigsten Spezifikationen der beiden Systeme.
 
-\begin{table}[]
+\begin{table}[!h]
 \begin{tabular}{|l|l|}
 \hline
 CPU              & Intel Core i7-6700 4 Kerne + 4 Threads (3,40GHz) \\ \hline
@@ -98,7 +98,7 @@ Bei den Messungen haben wir sowohl die Single Core Performance als auch die Mult
 Bei der Single Core Performance Messung wird lediglich die Performance eines einzigen Rechenkerns gemessen. Dies bedeutet das Geekbench für den Benchmark eine vordefinierte CPU reserviert, um darauf den Benchmark durchzuführen. Vor der Durchführung des Experiments wurden theoretische Annahmen bezüglich der Unterschiede in den Scores zwischen Hypervisor Typ1 (esxi) und Typ2 (Vmware Workstation Pro) besprochen. Es ist zu erwarten, dass sich die Punkteanzahl bei einem Single Core Performance Benchmark zwischen den Hypervisoren nur marginal unterschiedet.
 Wie bereits in Kapitel 3 erwähnt wurde der Single Core Benchmark insgesamt fünf Mal durchgeführt, um zufällig auftretende Messfehler später einfach mittels einer Mittelung auszugleichen. Die Resultate des Single Core Performance Tests mittels Geekbench 5 finden sich in der unterstehenden Grafik. \newline 
 
-\begin{figure}
+\begin{figure}[!h]
 	\centering
 	\includegraphics[keepaspectratio,width=8.5cm,height=0.75\textheight]{singlecore.png}
 	\caption{Single Core Benchmark}
@@ -113,7 +113,7 @@ Das Ergebnis entspricht den Erwartungen jedoch wurde nicht erwartet, dass beide 
 Der Multi Core Benchmark hatte denselben Ablauf wie der Single Core Benchmark nur wurden hier alle 8 Kerne verwendet. Dieser Benchmark bereitete in der Vorbereitung zu den Benchmarks Probleme da der ursprünglich ausgewählte Typ 2 Hypervisor VMWare Player nicht mehr als 4 Kerne unterstützte. Das Problem wurde nach einiger Recherche entdeckt und der für Enterprise Systeme gedachte Typ 2 Hypervisor VMWare Workstation Pro 16, welcher mehr als 4 Kerne unterstützt kam für alle durchgeführten Tests zum Einsatz.
 Wie bereits beim Single Core Benchmark wurde im Vorfeld überlegt wie die Endergebnisse aussehen könnten und ob die Unterschiede zwischen den zwischen den Hypervisor Typen in dieser Messung höher ausfallen könnten. Es wird erwartet das die Endpunkte aufgrund der Anzahl von Kernen wesentlich höher ausfällt jedoch wird, angenommen dass prozentuell der Unterschied zwischen den Hypervisoren sich ähnlich verhält wie bei der Single Core Performance Messung. \newline
 
-\begin{figure}
+\begin{figure}[!h]
 	\centering
 	\includegraphics[keepaspectratio,width=8.5cm,height=0.75\textheight]{multicore.png}
 	\caption{Multicore Benchmark}
@@ -132,7 +132,7 @@ Beachtlich war hingegen, dass im Vergleich zum Host System beide Hypervisor Type
 Für die Messung der Bootzeiten der VMs wurden auf beiden PCs eine Windows 10 VM mit identen Spezifikationen konfiguriert. Ursprünglich sollte dafür der Windows Log mit der ID 100 im Ereignisprotokoll als Messinstrument verwendet werden. Dieses Ereignis wird von Windows 10 standardmäßig bei jedem Bootvorgang geloggt und beinhaltet unter anderem die Bootzeit in Millisekunde. [6] Allerdings, stellte sich heraus, dass dieses Ereignis in virtuellen Umgebungen nicht erfasst werden kann. Somit wurde die Boot-Zeit durch das Filmen des Bildschirms erfasst, welches es ermöglicht den Start- und End-Frame des Bootvorganges genau festzulegen und somit auf die vergangene Zeit rückzuschließen. Für das Messergebnis wurden zwei Messungen auf den beiden PCs festgehalten und der Mittelwert berechnet.
 Das Ergebnis der Bootzeitmessung ist in Abbildung 2 zu sehen. Das Booten der Windows VM auf dem Typ 2 Workstation Hypervisor dauerte etwa 70\% länger als auf dem Typ 1 Hypervisor. Ein signifikanter Unterschied, welchen wir als größer 10\% definiert haben, ist somit gegeben. Zurückzuführen ist der Unterschied auf einen geringeren Overhead von Typ 1 Hypervisoren, im Vergleich zu Typ 2 Hypervisoren, welche ein zusätzliches Hostbetriebssystem betreiben müssen. Die Abweichung zwischen den beiden Messungen war bei dem Typ 2 Hypervisor ebenfalls größer. Die erste Typ 2 Messung lag bei 18,3 Sekunden und die zweite bei 17 Sekunden. Die Typ 1 Messungen kamen bei beiden Bootvorgängen auf genau 10,4 Sekunden.
 
-\begin{figure}
+\begin{figure}[!h]
 	\centering
 	\includegraphics[keepaspectratio,width=8.5cm,height=0.75\textheight]{bootzeit.png}
 	\caption{Boot Zeit Typ1 vs Typ2}
@@ -141,6 +141,7 @@ Das Ergebnis der Bootzeitmessung ist in Abbildung 2 zu sehen. Das Booten der Win
 
 \section{Fazit}
 \label{Fazit}
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 \bibliographystyle{IEEEtran}
 \bibliography{IEEEabrv,SEAAnew}
