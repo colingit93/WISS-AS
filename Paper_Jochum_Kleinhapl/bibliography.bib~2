@@ -1,0 +1,38 @@
+@book{Portnoy2016,
+	author = {Portnoy, Matthew},
+	edition = 2,
+	editor = {Lefevere, Jody},
+	isbn = {978-1-119-26772-0},
+	location = {Indianapolis},
+	pages = {21--29},
+	publisher = {John Wiley \& Sons, Inc.},
+	title = {Virtualization Essentials},
+	year = {2016}
+}
+
+@inproceedings{Goldberg1973,
+	author = {Goldberg, Robert P.},
+	title = {Architectural Principles for Virtual Computer Systems},
+	year = {1973}
+}
+
+@article{Popek&Goldberg1974,
+	abstract = {Virtual machine systems have been implemented on a limited number of third generation computer systems, e.g. CP-67 on the IBM 360/67. From previous empirical studies, it is known that certain third generation computer systems, e.g. the DEC PDP-10, cannot support a virtual machine system. In this paper, model of a third-generation-like computer system is developed. Formal techniques are used to derive precise sufficient conditions to test whether such an architecture can support virtual machines.},
+	address = {New York, NY, USA},
+	author = {Popek, Gerald J. and Goldberg, Robert P.},
+	doi = {10.1145/361011.361073},
+	issn = {0001-0782},
+	issue_date = {July 1974},
+	journal = {Commun. ACM},
+	keywords = {hypervisor; virtual machine monitor; proof; virtual memory; third generation architecture; formal requirements; sensitive instruction; abstract model; operating system; virtual machine},
+	month = {jul},
+	number = {7},
+	numpages = {10},
+	pages = {412--421},
+	publisher = {Association for Computing Machinery},
+	title = {Formal Requirements for Virtualizable Third Generation Architectures},
+	url = {https://doi.org/10.1145/361011.361073},
+	volume = {17},
+	year = {1974}
+}
+
