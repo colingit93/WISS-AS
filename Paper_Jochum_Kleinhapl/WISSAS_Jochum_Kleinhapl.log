@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.7)  8 JAN 2022 14:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.7)  11 JAN 2022 10:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -324,20 +324,7 @@ File: l3backend-pdftex.def 2021-12-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count281
 \l__pdf_internal_box=\box52
 )
-(./WISSAS_Jochum_Kleinhapl.aux
-
-LaTeX Warning: Label `architecture' multiply defined.
-
-
-LaTeX Warning: Label `architecture' multiply defined.
-
-
-LaTeX Warning: Label `architecture' multiply defined.
-
-
-LaTeX Warning: Label `architecture' multiply defined.
-
-)
+(./WISSAS_Jochum_Kleinhapl.aux)
 \openout1 = `WISSAS_Jochum_Kleinhapl.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -407,21 +394,26 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 40.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 40.
+
+Underfull \hbox (badness 6300) in paragraph at lines 42--44
+[]\OT1/ptm/b/n/9 Um die Fragestel-lung zu beant-worten, wur-den zwei
+ []
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 54.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+(Font)              <7> on input line 57.
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 69.
+(Font)              <8> on input line 72.
 <hypervisors.png, id=24, 1027.84pt x 622.325pt>
 File: hypervisors.png Graphic file (type png)
 <use hypervisors.png>
-Package pdftex.def Info: hypervisors.png  used on input line 73.
+Package pdftex.def Info: hypervisors.png  used on input line 76.
 (pdftex.def)             Requested size: 241.84042pt x 146.4268pt.
 
-Underfull \hbox (badness 6910) in paragraph at lines 74--74
+Underfull \hbox (badness 6910) in paragraph at lines 77--77
 \OT1/ptm/m/n/8 Fig. 1.  []Die Ar-chitek-tur von Typ 1 und Typ 2 Hy-per-vi-soren
 
  []
@@ -429,62 +421,87 @@ Underfull \hbox (badness 6910) in paragraph at lines 74--74
 <hypervisor_marketshare.png, id=26, 1003.75pt x 745.78625pt>
 File: hypervisor_marketshare.png Graphic file (type png)
 <use hypervisor_marketshare.png>
-Package pdftex.def Info: hypervisor_marketshare.png  used on input line 86.
+Package pdftex.def Info: hypervisor_marketshare.png  used on input line 89.
 (pdftex.def)             Requested size: 241.83919pt x 179.68652pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--87
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
 \OT1/ptm/m/n/8 Fig. 2.  []Weltweiter Mark-tan-teil von Vir-tu-al-isierung-stech
 -nolo-gien
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--87
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
 \OT1/ptm/m/n/8 Quelle: https://www.statista.com/statistics/1252355/top-virtuali
 zation-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
-[]\OT1/ptm/m/n/10 Die zwei Com-put-er-sys-teme welche f[]ur die
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+[]\OT1/ptm/m/n/10 Die zwei Com-put-er-sys-teme, welche f[]ur die
+ []
+
+
+Underfull \hbox (badness 1371) in paragraph at lines 96--97
+\OT1/ptm/m/n/10 Ver-suche/Messungen ver-wen-det wur-den, wur-den von der
  []
 
 [2 <./hypervisors.png> <./hypervisor_marketshare.png>]
-Underfull \hbox (badness 5302) in paragraph at lines 117--119
-\OT1/ptm/m/n/10 An-nah-men bez[]uglich der Un-ter-schiede in den Scores
+Underfull \hbox (badness 3199) in paragraph at lines 120--122
+\OT1/ptm/m/n/10 die Per-for-mance eines einzi-gen Rechenkerns gemessen.
  []
 
 
-Underfull \hbox (badness 2426) in paragraph at lines 117--119
-\OT1/ptm/m/n/10 zwis-chen Hy-per-vi-sor Typ1 (ESXi) und Typ2 (VMware
+Underfull \hbox (badness 1917) in paragraph at lines 120--122
+\OT1/ptm/m/n/10 Dies be-deutet das Geek-bench f[]ur den Bench-mark eine
  []
 
 
-Underfull \hbox (badness 3229) in paragraph at lines 117--119
-\OT1/ptm/m/n/10 zwis-chen den Hy-per-vi-soren nur marginal un-ter-schiedet.
+Underfull \hbox (badness 1365) in paragraph at lines 120--122
+\OT1/ptm/m/n/10 vordefinierte CPU re-serviert, um da-rauf den Bench-mark
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--119
+Underfull \hbox (badness 4217) in paragraph at lines 120--122
+\OT1/ptm/m/n/10 durchzuf[]uhren. Vor der Durchf[]uhrung des Ex-per-i-ments
+ []
+
+
+Underfull \hbox (badness 1448) in paragraph at lines 120--122
+\OT1/ptm/m/n/10 in den Scores zwis-chen Hy-per-vi-sor Typ 1 (ESXi) und
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 120--122
+\OT1/ptm/m/n/10 Per-for-mance Bench-mark zwis-chen den Hy-per-vi-soren nur
+ []
+
+
+Underfull \hbox (badness 1990) in paragraph at lines 120--122
+\OT1/ptm/m/n/10 marginal un-ter-schiedet. Wie bere-its erw[]ahnt, wurde der
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--122
 
  []
 
-<singlecore.png, id=45, 824.07875pt x 496.85625pt>
+<singlecore.png, id=44, 824.07875pt x 496.85625pt>
 File: singlecore.png Graphic file (type png)
 <use singlecore.png>
-Package pdftex.def Info: singlecore.png  used on input line 122.
+Package pdftex.def Info: singlecore.png  used on input line 125.
 (pdftex.def)             Requested size: 241.84367pt x 145.81317pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--134
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
 
  []
 
-<multicore.png, id=46, 829.0975pt x 501.875pt>
+<multicore.png, id=45, 829.0975pt x 501.875pt>
 File: multicore.png Graphic file (type png)
 <use multicore.png>
-Package pdftex.def Info: multicore.png  used on input line 137.
+Package pdftex.def Info: multicore.png  used on input line 140.
 (pdftex.def)             Requested size: 241.83638pt x 146.39005pt.
 [3 <./singlecore.png> <./multicore.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 152--152
+Underfull \hbox (badness 10000) in paragraph at lines 155--155
 [][][][]\OT1/ptm/m/n/8 https://www.windows-faq.de/2017/02/05/windows-ereignis-i
 d-100-im-
  []
@@ -492,13 +509,12 @@ d-100-im-
 <bootzeit.png, id=58, 824.07875pt x 496.85625pt>
 File: bootzeit.png Graphic file (type png)
 <use bootzeit.png>
-Package pdftex.def Info: bootzeit.png  used on input line 157.
+Package pdftex.def Info: bootzeit.png  used on input line 160.
 (pdftex.def)             Requested size: 241.84367pt x 145.81317pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4 <./bootzeit.png>] (./WISSAS_Jochum_Kleinhapl.bbl)
-(./WISSAS_Jochum_Kleinhapl.lof
+(./WISSAS_Jochum_Kleinhapl.bbl) (./WISSAS_Jochum_Kleinhapl.lof
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
  [][] [][]\OT1/ptm/m/n/10 Die Ar-chitek-tur von Typ 
  []
@@ -508,7 +524,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
  \OT1/ptm/m/n/10 1 und Typ 2 Hy-per-vi-soren 
  []
 
-
+[4 <./bootzeit.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 2--2
  [][] [][]\OT1/ptm/m/n/10 Weltweiter Mark-tan-teil von 
  []
@@ -541,20 +557,16 @@ Before submitting the final camera ready copy, remember to:
 
 [5
 
-] (./WISSAS_Jochum_Kleinhapl.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- )
+] (./WISSAS_Jochum_Kleinhapl.aux) )
 (\end occurred when \iffalse on line 10 was incomplete) 
 Here is how much of TeX's memory you used:
  10095 strings out of 478353
  166390 string characters out of 5854636
- 481579 words of memory out of 5000000
+ 481918 words of memory out of 5000000
  28087 multiletter control sequences out of 15000+600000
  439331 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,8n,63p,2415b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,8n,63p,1053b,343s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/f
 onts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></
@@ -562,7 +574,7 @@ usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf
 -dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/t
 imes/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
 share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on WISSAS_Jochum_Kleinhapl.pdf (5 pages, 404543 bytes).
+Output written on WISSAS_Jochum_Kleinhapl.pdf (5 pages, 405000 bytes).
 PDF statistics:
  128 PDF objects out of 1000 (max. 8388607)
  96 compressed objects within 1 object stream
